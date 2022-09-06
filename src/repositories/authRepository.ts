@@ -6,7 +6,6 @@ export interface User {
     name: string;
     email: string;
     password: string;
-    image: string;
 }
 
 
@@ -15,8 +14,7 @@ export async function insert(UserCreateData: UserCreateData, hashedPassword: str
         data: {
             name: UserCreateData.name,
             email: UserCreateData.email,
-            password: hashedPassword,
-            image: UserCreateData.image
+            password: hashedPassword
         }
     })
 }

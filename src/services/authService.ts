@@ -32,5 +32,5 @@ export async function signIn(user: User) {
 
     const token = jwt.sign({ id: verify.id, email: verify.email }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
-    return { token, name: verify.name, image: verify.image };
+    return { token, name: verify.name};
 }

@@ -27,3 +27,11 @@ export async function verifyEmail(email: string) {
     })
 }
 
+export async function verifyUserId(userId: number) {
+    return await prisma.users.findUnique({
+        where: {
+            id: userId
+        },
+    })
+}
+

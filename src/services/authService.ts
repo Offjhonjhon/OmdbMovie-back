@@ -1,4 +1,3 @@
-import { prisma } from "../config/database.js";
 import verifyIsUserEmailAlreadyInUse from "../utils/verifyIsUserEmailAlreadyInUse.js";
 import { User } from "../repositories/authRepository.js";
 import * as authRepository from "../repositories/authRepository.js";

@@ -27,9 +27,7 @@ model Favorited {
   movieTittle String
   imdbId      String
   moviePoster String
-  movieTitle  String
-
-  user Users @relation(fields: [userId], references: [id])
+  user        Users  @relation(fields: [userId], references: [id])
 
   @@map("favorited_movies")
 }
